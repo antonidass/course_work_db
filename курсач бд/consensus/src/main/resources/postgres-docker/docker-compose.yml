@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "consensus"
+      POSTGRES_USER: "akrik"
+      POSTGRES_PASSWORD: "akrik"
+    ports:
+      - "5432:5432"
