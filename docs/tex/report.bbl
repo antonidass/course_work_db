@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{(#1)}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{moex}
+\selectlanguageifdefined{russian}
+Исследование московской биржи.
+\newblock Режим доступа: \url{https://www.moex.com/n37253}
+  (дата обращения: 07.06.2021).
+
+\bibitem{rest-api}
+\selectlanguageifdefined{russian}
+What is a REST API? - Red Hat [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://www.redhat.com/en/topics/api/what-is-a-rest-api} (дата
+  обращения: 07.06.2021).
+
+\bibitem{acid}
+\selectlanguageifdefined{russian}
+Транзакции, ACID, CAP | GeekBrains [Электронный
+  ресурс].
+\newblock Режим доступа:
+  \url{https://gb.ru/posts/acid_cap_transactions} (дата обращения:
+  07.06.2021).
+
+\end{thebibliography}

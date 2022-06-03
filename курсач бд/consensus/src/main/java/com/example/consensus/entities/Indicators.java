@@ -4,6 +4,7 @@ package com.example.consensus.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import javax.persistence.*;
+import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -23,29 +24,23 @@ public class Indicators {
 
     @Column(name = "market_cap")
     @Min(value = 0, message = "Market cap can not be less then 0!")
-    private int market_cap;
+    private double market_cap;
 
-    @Size(min = 0, max = 100, message = "Ebitda must be expressed in %")
-    @Column(name = "ebitda")
-    private int ebitda;
-
-    @Size(min = 0, max = 100, message = "Income must be expressed in %")
+    @Max(value = 100, message = "Income cannot be more than 100!")
     @Column(name = "income")
     private int income;
 
     @Min(value = 0, message = "Revenue must be more then 0!")
     @Column(name = "revenue")
-    private int revenue;
+    private long revenue;
 
-    @OneToOne()
-    @JoinColumn(name = "indicators_id", referencedColumnName = "id")
+    @OneToOne(mappedBy = "indicators", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JsonIgnore
     private Company company;
 
     public void setFields(Indicators newIndicators) {
         setPrice(newIndicators.getPrice());
         setMarket_cap(newIndicators.getMarket_cap());
-        setEbitda(newIndicators.getEbitda());
         setIncome(newIndicators.getIncome());
         setRevenue(newIndicators.getRevenue());
         setCompany(newIndicators.getCompany());

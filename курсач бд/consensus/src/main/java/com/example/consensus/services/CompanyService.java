@@ -19,15 +19,6 @@ public class CompanyService {
         return companyRepository.findAll();
     }
 
-    public Company getCompanyByName(String name) {
-        Company company = companyRepository.findByName(name);
-
-        if (company == null) {
-            throw new FileStorageException("Company with name = " + name + " not exists!");
-        }
-        return company;
-    }
-
     public Company getCompanyById(Long id) {
         return companyRepository.findById(id).orElseThrow(() -> new FileStorageException("Company with id = " + id + " not exists!"));
     }

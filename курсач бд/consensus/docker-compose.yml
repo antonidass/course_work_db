@@ -13,7 +13,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
-    restart: always
     depends_on:
       - db # This service depends on mysql. Start that first.
     environment: # Pass environment variables to the service
@@ -45,7 +44,6 @@ services:
     image: 'postgres:13.1-alpine'
     ports:
       - "5432:5432"
-    restart: always
     environment:
       - POSTGRES_DB=consensus
       - POSTGRES_USER=compose-postgres

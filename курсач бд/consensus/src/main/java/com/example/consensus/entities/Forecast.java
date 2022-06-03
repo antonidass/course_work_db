@@ -2,9 +2,9 @@ package com.example.consensus.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.sql.Timestamp;
 
 @Table
 @Entity
@@ -19,13 +19,13 @@ public class Forecast {
     private String investHouse;
 
     @Column(name = "date_publishing")
-    private String datePublishing;
+    private Timestamp datePublishing;
 
     @Column(name = "date_end")
-    private String dateEnd;
+    private Timestamp dateEnd;
 
     @Column(name = "date_update")
-    private String dateUpdate;
+    private Timestamp dateUpdate;
 
     @Column(name = "goal_price")
     private int goalPrice;

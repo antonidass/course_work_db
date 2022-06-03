@@ -1,6 +1,8 @@
 package com.example.consensus.entities;
 
+import com.example.consensus.CustomGenerator;
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -10,9 +12,7 @@ import java.util.Collection;
 @Data
 @Table(name = "users")
 public class User {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "username")
@@ -25,8 +25,24 @@ public class User {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "surname")
+    private String surname;
+
     @ManyToMany
     @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"),
                                      inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Collection<Role> roles;
+
+    public void setFields(User userDetails) {
+        setId(userDetails.getId());
+        setUsername(userDetails.getUsername());
+        setPassword(userDetails.getPassword());
+        setEmail(userDetails.getEmail());
+        setName(userDetails.getName());
+        setSurname(userDetails.getSurname());
+        setRoles(userDetails.getRoles());
+    }
 }

@@ -1,9 +1,16 @@
 package com.example.consensus.controllers;
 
 import com.example.consensus.entities.Company;
+import com.example.consensus.entities.redis.CompanyRedis;
+import com.example.consensus.exception.FileStorageException;
+
 import com.example.consensus.services.CompanyService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -15,33 +22,49 @@ public class CompanyController {
         this.companyService = companyService;
     }
 
-    @GetMapping("/all")
-    public List<Company> getAllCompanies() {
-        return companyService.getAllCompanies();
-    }
-
-    @GetMapping("/company/")
-    public Company getCompanyByName(@RequestParam(value = "name") String name) {
-        return companyService.getCompanyByName(name);
+    @GetMapping("/company/all")
+    public ResponseEntity<List<?>> getAllCompanies() {
+        List<Company> companies = companyService.getAllCompanies();
+        return new ResponseEntity<>(companies, HttpStatus.OK);
     }
 
     @GetMapping("/company/{id}")
-    public Company getCompanyById(@PathVariable Long id) {
-        return companyService.getCompanyById(id);
+    public ResponseEntity<?> getCompanyById(@PathVariable Long id) {
+        Company company;
+        try {
+            company = companyService.getCompanyById(id);
+        }  catch (FileStorageException exc) {
+            return new ResponseEntity<>("Компания с id = " + id + " не найдена!", HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(company, HttpStatus.OK);
     }
 
     @PutMapping("/company/{id}")
-    public Company updateCompany(@PathVariable Long id, @RequestBody Company companyDetails) {
-        return companyService.updateCompanyById(id, companyDetails);
+    public ResponseEntity<?> updateCompany(@PathVariable Long id, @RequestBody Company companyDetails) {
+        Company company;
+        try {
+            company = companyService.updateCompanyById(id, companyDetails);
+        }  catch (FileStorageException exc) {
+            return new ResponseEntity<>("Компания с id = " + id + " не найдена!", HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(company, HttpStatus.OK);
     }
 
-    @PostMapping("/company")
-    public Company addCompany(@RequestBody Company company) {
-        return companyService.addCompany(company);
+    @PostMapping("/company/add")
+    public ResponseEntity<?> addCompany(@Valid @RequestBody Company company) {
+        Company companyNew = companyService.addCompany(company);
+        return new ResponseEntity<>(companyNew, HttpStatus.OK);
     }
 
+    @ResponseStatus(value = HttpStatus.OK)
     @DeleteMapping("/company/{id}")
-    public Company deleteCompany(@PathVariable Long id) {
-        return companyService.deleteCompany(id);
+    public ResponseEntity<?> deleteCompany(@PathVariable Long id) {
+        Company company;
+        try {
+            company = companyService.deleteCompany(id);
+        }  catch (FileStorageException exc) {
+            return new ResponseEntity<>("Компания с id = " + id + " не найдена!", HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(company, HttpStatus.OK);
     }
 }
