@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  postgres:
+    restart: always
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "consensus"
+      POSTGRES_USER: "akrik"
+      POSTGRES_PASSWORD: "akrik"
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: "redis"
+    restart: always
+    command: redis-server
+    ports:
+      - '6379:6379'

@@ -1,0 +1,127 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{6}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Режим доступа: \url{https://www.redhat.com/en/topics/api/what-is-a-rest-api} (дата обращения: 07.05.2022)}
+      \field{title}{What is a REST API? - Red Hat [Электронный ресурс]}
+    \endentry
+    \entry{1}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=c672d4556ddf1697dd7c89a67ae8df5c}{%
+           family={Левонисова},
+           familyi={Л\bibinitperiod},
+           given={С.\bibnamedelimi В.},
+           giveni={С\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \list{publisher}{1}{%
+        {Издательский дом Москва}%
+      }
+      \strng{namehash}{c672d4556ddf1697dd7c89a67ae8df5c}
+      \strng{fullhash}{c672d4556ddf1697dd7c89a67ae8df5c}
+      \strng{bibnamehash}{c672d4556ddf1697dd7c89a67ae8df5c}
+      \strng{authorbibnamehash}{c672d4556ddf1697dd7c89a67ae8df5c}
+      \strng{authornamehash}{c672d4556ddf1697dd7c89a67ae8df5c}
+      \strng{authorfullhash}{c672d4556ddf1697dd7c89a67ae8df5c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Базы данных}
+      \field{year}{2005}
+    \endentry
+    \entry{2}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=403fb431fbe772ed02934551a29da9c5}{%
+           family={Лазицкас},
+           familyi={Л\bibinitperiod},
+           given={Е.\bibnamedelimi А.},
+           giveni={Е\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \list{publisher}{1}{%
+        {Издательский дом Москва}%
+      }
+      \strng{namehash}{403fb431fbe772ed02934551a29da9c5}
+      \strng{fullhash}{403fb431fbe772ed02934551a29da9c5}
+      \strng{bibnamehash}{403fb431fbe772ed02934551a29da9c5}
+      \strng{authorbibnamehash}{403fb431fbe772ed02934551a29da9c5}
+      \strng{authornamehash}{403fb431fbe772ed02934551a29da9c5}
+      \strng{authorfullhash}{403fb431fbe772ed02934551a29da9c5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Базы данных и системы управления базами данных.}
+      \field{year}{2016}
+    \endentry
+    \entry{7}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=d3a43a3d2ad5f48d43e91bb1404b9906}{%
+           family={Г.А.\bibnamedelimi Петров},
+           familyi={Г\bibinitperiod\bibinitdelim П\bibinitperiod},
+           given={С.В.\bibnamedelimi Тихов},
+           giveni={С\bibinitperiod\bibinitdelim Т\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \list{publisher}{1}{%
+        {Издательский дом Москва}%
+      }
+      \strng{namehash}{d3a43a3d2ad5f48d43e91bb1404b9906}
+      \strng{fullhash}{d3a43a3d2ad5f48d43e91bb1404b9906}
+      \strng{bibnamehash}{d3a43a3d2ad5f48d43e91bb1404b9906}
+      \strng{authorbibnamehash}{d3a43a3d2ad5f48d43e91bb1404b9906}
+      \strng{authornamehash}{d3a43a3d2ad5f48d43e91bb1404b9906}
+      \strng{authorfullhash}{d3a43a3d2ad5f48d43e91bb1404b9906}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Базы данных, учебное пособие.}
+      \field{year}{2008}
+    \endentry
+    \entry{4}{misc}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Режим доступа: \url{https://postgrespro.ru/docs/postgresql/} (дата обращения: 07.05.2022)}
+      \field{title}{PostgreSQL: Документация. [Электронный ресурс]}
+    \endentry
+    \entry{8}{misc}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Режим доступа: \url{https://redis.io/} (дата обращения: 07.05.2022)}
+      \field{title}{Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker [Электронный ресурс]}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

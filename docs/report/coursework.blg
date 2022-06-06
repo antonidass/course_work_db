@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'coursework.blg'
+[50] biber-darwin:340> INFO - === Sat Jun  4, 2022, 00:45:47
+[62] Biber.pm:418> INFO - Reading 'coursework.bcf'
+[162] Biber.pm:972> INFO - Found 6 citekeys in bib section 0
+[175] Biber.pm:4383> INFO - Processing section 0
+[183] Biber.pm:4574> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[185] bibtex.pm:1713> INFO - LaTeX decoding ...
+[196] bibtex.pm:1518> INFO - Found BibTeX data source 'biblio.bib'
+[230] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[230] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[230] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'ru-RU'
+[230] Biber.pm:4209> INFO - No sort tailoring available for locale 'ru-RU'
+[233] bbl.pm:654> INFO - Writing 'coursework.bbl' with encoding 'UTF-8'
+[235] bbl.pm:757> INFO - Output to coursework.bbl
+[235] Biber.pm:130> WARN - Duplicate entry key: 'cpp' in file 'biblio.bib', skipping ...
+[235] Biber.pm:132> INFO - WARNINGS: 1
