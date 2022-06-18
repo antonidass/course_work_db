@@ -1,0 +1,381 @@
+{
+	"id": "6806c1e9-7bae-4762-a48b-7f20a190a6ce",
+	"name": "UI Test",
+	"timestamp": "2022-05-26T23:07:49.704Z",
+	"collection_id": "19371326-18a08830-88a1-4b16-aaab-df2c415fd333",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 23,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5f634e03-9104-4fae-90ef-15a3441c5c78",
+			"name": "Registration",
+			"url": "http://localhost:8080/api/v1/registration",
+			"time": 112,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"response should be okay to process": true,
+				"response should return fullName": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should be okay to process": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should return fullName": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				112
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"response should be okay to process": true,
+					"response should return fullName": true
+				}
+			]
+		},
+		{
+			"id": "3ded47a1-a9ee-4c50-ade8-6de1e6dc40af",
+			"name": "Authentication",
+			"url": "http://localhost:8080/login",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"response should be okay to process": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should be okay to process": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"response should be okay to process": true
+				}
+			]
+		},
+		{
+			"id": "15118dfc-b725-40a8-81ce-866df3a092dd",
+			"name": "Add company",
+			"url": "http://localhost:8080/api/v1/company/add",
+			"time": 28,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"response should be okay to process": true,
+				"The response has all properties": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should be okay to process": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The response has all properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				28
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"response should be okay to process": true,
+					"The response has all properties": true
+				}
+			]
+		},
+		{
+			"id": "994bf41b-3a82-4396-b978-e1a7dc44b567",
+			"name": "Add Forecast",
+			"url": "http://localhost:8080/api/v1/forecast/",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"response should be okay to process": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should be okay to process": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"response should be okay to process": true
+				}
+			]
+		},
+		{
+			"id": "2acb4ba7-4584-4494-9a40-0bcbd21b7390",
+			"name": "Show Companies",
+			"url": "http://localhost:8080/api/v1/all",
+			"time": 117,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"response should be okay to process": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should be okay to process": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				117
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"response should be okay to process": true
+				}
+			]
+		},
+		{
+			"id": "3590a838-0609-49a8-8e5e-2648b0f7a8a2",
+			"name": "Get Company",
+			"url": "http://localhost:8080/api/v1/company/2",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"response should be okay to process": true,
+				"The response has correct Name": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should be okay to process": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The response has correct Name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"response should be okay to process": true,
+					"The response has correct Name": true
+				}
+			]
+		},
+		{
+			"id": "15f62cc8-29a0-40d3-a4e6-3b4cc26986c3",
+			"name": "Get forecasts for Company",
+			"url": "http://localhost:8080/api/v1/company/2/forecasts",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"response should be okay to process": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should be okay to process": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"response should be okay to process": true
+				}
+			]
+		},
+		{
+			"id": "2b3c6436-c8fc-4eed-80d2-df3ba45683d4",
+			"name": "Get Forecast",
+			"url": "http://localhost:8080/api/v1/forecast/2",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"response should be okay to process": true,
+				"The response has correct Name": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should be okay to process": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The response has correct Name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"response should be okay to process": true,
+					"The response has correct Name": true
+				}
+			]
+		},
+		{
+			"id": "51124f4a-40e8-47d5-ac51-75b09b8f6982",
+			"name": "Get Indicators of Company",
+			"url": "http://localhost:8080/api/v1/company/2/indicators",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"response should be okay to process": true,
+				"The response has correct income": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response should be okay to process": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The response has correct income": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"response should be okay to process": true,
+					"The response has correct income": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 308,
+	"collection": {
+		"requests": [
+			{
+				"id": "5f634e03-9104-4fae-90ef-15a3441c5c78",
+				"method": "POST"
+			},
+			{
+				"id": "3ded47a1-a9ee-4c50-ade8-6de1e6dc40af",
+				"method": "POST"
+			},
+			{
+				"id": "15118dfc-b725-40a8-81ce-866df3a092dd",
+				"method": "POST"
+			},
+			{
+				"id": "994bf41b-3a82-4396-b978-e1a7dc44b567",
+				"method": "POST"
+			},
+			{
+				"id": "2acb4ba7-4584-4494-9a40-0bcbd21b7390",
+				"method": "GET"
+			},
+			{
+				"id": "3590a838-0609-49a8-8e5e-2648b0f7a8a2",
+				"method": "GET"
+			},
+			{
+				"id": "15f62cc8-29a0-40d3-a4e6-3b4cc26986c3",
+				"method": "GET"
+			},
+			{
+				"id": "2b3c6436-c8fc-4eed-80d2-df3ba45683d4",
+				"method": "GET"
+			},
+			{
+				"id": "51124f4a-40e8-47d5-ac51-75b09b8f6982",
+				"method": "GET"
+			}
+		]
+	}
+}
