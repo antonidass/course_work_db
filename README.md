@@ -1,3 +1,7 @@
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
 ## 1. Веб-приложение агргатор прогнозов на курс акции.
 ---
 ## 2. Приложение позволяет ознакомиться с компаниями на фондовом рынке, а также с прогнозами стоимости акций от различных аналитиков инвестдомов. 
